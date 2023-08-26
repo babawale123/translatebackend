@@ -48,4 +48,8 @@ router.post('/login', async(req, res) =>{
       res.status(500).json({ message: 'An error occurred' });
     }
 })
+
+router.get('/test', (req,res)=>{
+  res.status(200).json({message:"Test successful"})
+})
 module.exports = router
